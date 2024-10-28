@@ -1,3 +1,5 @@
 webstorm
 下载不要下最新版本的，否则有的插件安装不了
 配置网址 https://cloud.tencent.com/developer/article/2133903
+git  Failed to connect to github.com port 443 after  的原因和解决方案
+https://cloud.tencent.com/developer/article/2405656

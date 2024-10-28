@@ -1,0 +1,3 @@
+webstorm
+下载不要下最新版本的，否则有的插件安装不了
+配置网址 https://cloud.tencent.com/developer/article/2133903

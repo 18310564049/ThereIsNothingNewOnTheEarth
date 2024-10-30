@@ -14,7 +14,7 @@ Page({
   onLoad: function () {
     let musics = api.musics
     musics[0].playImg = MUSIC_PALY_IMG
-    this.setData({musics})
+    this.setData({ musics })
     // api.getMusicIdList({
     //   success: (res) => {
 
@@ -65,7 +65,7 @@ Page({
             musics.push(music)
           }
           this.getMusics(idList)
-        } 
+        }
       })
     } else {
       this.setData({ musics })
@@ -112,10 +112,10 @@ Page({
 
     this.setData({ musics, playId })
   },
-  playMusic: function (music) {  
+  playMusic: function (music) {
     wx.playBackgroundAudio({
       // dataUrl: music.music_id,
-      dataUrl:   "http://mvoice.spriteapp.cn/voice/2017/0725/5976bb11cb0db.mp3" ,
+      dataUrl: "http://mvoice.spriteapp.cn/voice/2017/0725/5976bb11cb0db.mp3",
       title: music.title
     })
   },

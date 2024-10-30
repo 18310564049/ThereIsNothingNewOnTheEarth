@@ -40,7 +40,7 @@ Page({
           console.log('页面标题设置成功');
         },
         fail: function (err) {
-          console.error('页面标题设置失败:', err);
+          console.error('页面标题设置失败1:', err);
         }
       });
     }

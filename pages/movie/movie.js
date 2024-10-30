@@ -10,7 +10,7 @@ Page({
   },
   onReady: function () {
     wx.setNavigationBarTitle({
-      title: '电影'
+      title:  '电影'
     })
   },
   getMovies: function () {

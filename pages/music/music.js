@@ -25,14 +25,25 @@ Page({
     //   }
     // })
   },
-    /**
+  /**
    * 生命周期函数--监听页面加载
    */
   onReady: function () {
-    // 设置页面标题为音乐
-    wx.setNavigationBarTitle({
-      title: '音乐'
-    })
+    const PAGE_TITLE = '音乐';
+    // 检查当前页面标题是否已经是目标标题
+    const currentTitle = this.data.navigationBarTitle || ''; // 假设页面数据中有 navigationBarTitle 字段
+    if (currentTitle !== PAGE_TITLE) {
+      // 设置页面标题为音乐
+      wx.setNavigationBarTitle({
+        title: PAGE_TITLE,
+        success: function () {
+          console.log('页面标题设置成功');
+        },
+        fail: function (err) {
+          console.error('页面标题设置失败:', err);
+        }
+      });
+    }
   },
 
   getMusics: function (idList) {

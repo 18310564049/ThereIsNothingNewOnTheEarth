@@ -25,11 +25,16 @@ Page({
     //   }
     // })
   },
+    /**
+   * 生命周期函数--监听页面加载
+   */
   onReady: function () {
+    // 设置页面标题为音乐
     wx.setNavigationBarTitle({
       title: '音乐'
     })
   },
+
   getMusics: function (idList) {
     let musics = this.data.musics
 
